@@ -1,4 +1,4 @@
-/* Login Page Specific Styles */
+/* Login page specific styles */
 .login-card {
     max-width: 450px;
     margin: auto;
@@ -27,7 +27,7 @@
     margin-bottom: 10px;
 }
 
-/* Social Login Buttons */
+/* --- Social Login Buttons --- */
 .social-login-btn {
     display: flex;
     align-items: center;
@@ -57,32 +57,4 @@
 
 .social-login-btn.apple {
     border-color: #A2AAAD;
-}
-
-/* Divider */
-.divider {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 20px 0;
-}
-
-.divider::before,
-.divider::after {
-    content: '';
-    flex: 1;
-    border-bottom: 1px solid var(--fair-accent);
-}
-
-.divider span {
-    padding: 0 10px;
-    color: var(--dark);
-    opacity: 0.7;
-}
-
-@media (max-width: 768px) {
-    .login-card {
-        margin-top: 5vh;
-        padding: 20px;
-    }
 }

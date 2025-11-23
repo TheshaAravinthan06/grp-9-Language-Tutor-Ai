@@ -1,4 +1,6 @@
-// Login page specific functionality
+/**
+ * Handles the login form submission.
+ */
 function handleLogin(event) {
     event.preventDefault(); 
     
@@ -14,9 +16,6 @@ function handleLogin(event) {
         
         // Simulate login process
         setTimeout(function() {
-            loginBtn.innerHTML = originalText;
-            loginBtn.disabled = false;
-            
             // Redirect to home page after successful login
             window.location.href = 'index.html';
         }, 1500);
@@ -25,19 +24,11 @@ function handleLogin(event) {
     }
 }
 
+/**
+ * Handles social login
+ */
 function socialLogin(provider) {
     alert('Signing in with ' + provider.charAt(0).toUpperCase() + provider.slice(1));
-    
-    // Simulate social login process
-    setTimeout(function() {
-        window.location.href = 'index.html';
-    }, 1000);
+    // In a real app, this would redirect to OAuth flow
+    window.location.href = 'index.html';
 }
-
-// Add form submission handler
-document.addEventListener('DOMContentLoaded', function() {
-    const loginForm = document.getElementById('loginForm');
-    if (loginForm) {
-        loginForm.addEventListener('submit', handleLogin);
-    }
-});

@@ -289,21 +289,3 @@ document.addEventListener('DOMContentLoaded', function() {
         languageSelect.addEventListener('change', updateChatWelcome);
     }
 });
-
-// About page specific JavaScript
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('About page loaded');
-    
-    // Add any about page specific functionality here
-});
-
-// // Add any about page specific functions here
-
-// // About page specific JavaScript
-// document.addEventListener('DOMContentLoaded', function() {
-//     console.log('About page loaded');
-    
-//     // Add any about page specific functionality here
-// });
-
-// // Add any about page specific functions here
