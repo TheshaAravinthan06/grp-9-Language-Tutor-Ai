@@ -1,0 +1,51 @@
+/* About Page Specific Styles */
+.about-hero {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.feature-card {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 16px;
+    background: var(--card-bg);
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(67, 97, 238, 0.1);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.mission-section {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 40px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 40px 0;
+    }
+    
+    .feature-card {
+        padding: 20px;
+    }
+    
+    .mission-section {
+        padding: 30px 20px;
+    }
+}
